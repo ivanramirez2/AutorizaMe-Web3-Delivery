@@ -27,10 +27,13 @@ graph TD
         MS_SC -- Ethers.js --> Blockchain[Blockchain Sepolia]
     end
 
-    style Spring fill:#f9f,stroke:#333,stroke-width:2px
-    style MS_IPFS fill:#bbf,stroke:#333,stroke-width:1px
-    style MS_SC fill:#bbf,stroke:#333,stroke-width:1px
-    style DB fill:#dfd,stroke:#333,stroke-width:1px
+    %% Colores mejorados para visibilidad
+    style Spring fill:#6DB33F,stroke:#333,stroke-width:2px,color:#fff
+    style MS_IPFS fill:#339933,stroke:#333,stroke-width:1px,color:#fff
+    style MS_SC fill:#339933,stroke:#333,stroke-width:1px,color:#fff
+    style DB fill:#336791,stroke:#333,stroke-width:1px,color:#fff
+    style Pinata fill:#65C2CB,stroke:#333,stroke-width:1px,color:#fff
+    style Blockchain fill:#3C3C3D,stroke:#333,stroke-width:1px,color:#fff
 ```
 
 ---
@@ -40,6 +43,7 @@ graph TD
 - **`🍃 Autorizame-api/`**: Backend principal en Spring Boot. Orquestador de lógica, validaciones y persistencia JPA.
 - **`📦 ms_wrapper_ipfs/`**: Microservicio Node.js para interactuar con el SDK de Pinata/IPFS.
 - **`⛓️ ms_wrapper_sc/`**: Microservicio Node.js para el minteo y transferencia de Smart Contracts (Ethers.js).
+- **`📜 blockchain/`**: Directorio con el código fuente del Smart Contract (`Autorizame.sol`).
 - **`🚜 Farmville/`**: Módulo adicional de procesamiento de datos JDBC y gestión de archivos.
 
 ---
